@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #010101;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #010101;
+            text-align: center;
+        }
+
+        h2 {
+            color: #010101;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+    <p>This is my first webpage created by using basic HTML and CSS styles and helps me to involve more effectively in creating webpage<br>This page is about my brief details.<br>This helps me to understand the how the page will creating by using some of the web development tools using HTML,CSS styles and javascript.</p>
+    
+    <h2>About Me</h2>
+    <p>THUMMALA MALLESWAR REDDY<br>Currently pursuing B-Tech Final year<br>Aspiring web developer <br>I'm learning web development and this is a simple webpage using HTML and CSS.</p>
+
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Reading</li>
+        <li>Coding</li>
+        <li>Traveling</li>
+    </ul>
+
+    <h2>My workspace</h2>
+    <img src="image.jpg" width="500" height="333" alt="Healthy Working System">
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <p>Email: <a href="mailto:malleswarreddy321@gmail.com">malleswarreddy321@gmail.com</a></p>
+
+    <!-- Button to change background color -->
+    <button id="changeColorButton">Change Background Color</button>
+
+    <!-- JavaScript to change background color -->
+    <script>
+        document.getElementById('changeColorButton').addEventListener('click', function() {
+            document.body.style.backgroundColor = 'teal';
+        });
+    </script>
+</body>
+</html>
